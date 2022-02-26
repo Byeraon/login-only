@@ -170,7 +170,7 @@ export const LoginForm: React.FC<FormProps> = ({ logged, setLogin }) => {
       setLogin(null);
       setError({
         show: true,
-        message: `Пользователя ${user.name} не существует`,
+        message: `Пользователя ${user.name} с таким паролем не существует`,
       });
     }
     setUser({ name: "", password: "" });
